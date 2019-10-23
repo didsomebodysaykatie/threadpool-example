@@ -1,6 +1,6 @@
 public class Job implements Runnable {
   private int jobNumber;
-  
+  //whoop whoop i'm doing the thing
   Job (int jobNumber) {
     this.jobNumber = jobNumber;
    }
@@ -11,6 +11,6 @@ public class Job implements Runnable {
       Thread.sleep((int)(1000));
     } catch (InterruptedException e) {
     }
-    System.out.println("Job: " + jobNumber + " is ending in thread: " + Thread.currentThread().gentName());
+    System.out.println("Job: " + jobNumber + " is ending in thread: " + Thread.currentThread().getName());
    }
 }
